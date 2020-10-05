@@ -1,8 +1,7 @@
 :root{
-    --primary:tomato;
-    --secondary:salmon;
-    --primary-text:white;
-    --secondary-text:tomato;
+    --c-nav:#ccc;
+    --c-primary:#eee;
+    --c-secondary:#222;
 }
 *{
     margin: 0;
@@ -41,10 +40,10 @@ img{
     align-items: center;
 }
 nav{
-    background-color: tomato;
-    background-color: var(--primary);
-    color: white;
-    color: var(--primary-text);
+    background-color: #ccc;
+    background-color: var(--c-nav);
+    color: #222;
+    color: var(--c-secondary);
     height: 60px;
     display: flex;
     justify-content: center;
@@ -67,10 +66,10 @@ nav .container{
     text-decoration: underline;
 }
 section{
-    background-color: salmon;
-    background-color: var(--secondary);
-    color: white;
-    color: var(--primary-text);
+    background-color: #eee;
+    background-color: var(--c-primary);
+    color: #222;
+    color: var(--c-secondary);
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -79,14 +78,14 @@ section{
     align-items: center;
 }
 section:nth-child(odd){
-    background-color: white;
-    background-color: var(--primary-text);
-    color: tomato;
-    color: var(--secondary-text);
+    background-color: #222;
+    background-color: var(--c-secondary);
+    color: #eee;
+    color: var(--c-primary);
 }
 figure img{
-    border: 4px solid white;
-    border: 4px solid var(--primary-text);
+    border: 4px solid #222;
+    border: 4px solid var(--c-secondary);
     border-radius: 50%;
     width: 256px;
 }
